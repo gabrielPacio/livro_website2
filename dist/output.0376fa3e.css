@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@font-face {
+  font-family: merriweather;
+  src: url("/Merriweather-Regular.726d7002.ttf");
+}
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+p {
+  font-family: merriweather, Times, serif;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  width: 1024px;
+  background-color: #fafafa;
+  -webkit-box-shadow: inset 3px 0px 27px 0px rgba(64, 53, 78, 0.22);
+  box-shadow: inset 3px 0px 27px 0px rgba(64, 53, 78, 0.22);
+}
+
+.navbar {
+  background-color: #C6B03D;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  /*a:not(:last-child):after {
+    content: '|';
+    margin: 0 10px;
+  }*/
+}
+.navbar ul li {
+  font-size: 25px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fafafa;
+}
+.navbar ul li:not(:last-child) a::after {
+  content: "｜";
+  margin: 0 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .content {
+    width: 100%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content {
+    width: 992px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .content {
+    width: 1024px;
+  }
+}
+
+
+
+
+/*# sourceMappingURL=/output.0376fa3e.css.map */

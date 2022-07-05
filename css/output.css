@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@font-face {
+  font-family: merriweather;
+  src: url("./../public/fonts/Merriweather-Regular.ttf");
+}
+@font-face {
+  font-family: active;
+  src: url("./../public/fonts/ActiveRegular.OTF");
+}
+@font-face {
+  font-family: caveat;
+  src: url("./../public/fonts/CaveatBrush-Regular.ttf");
+}
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+p {
+  font-family: merriweather, Times, serif;
+  color: #212111;
+}
+
+h1 {
+  font-family: active, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #99902f;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.content {
+  width: 1024px;
+  background-color: #fafafa;
+  -webkit-box-shadow: inset 3px 0px 27px 0px rgba(64, 53, 78, 0.22);
+  box-shadow: inset 3px 0px 27px 0px rgba(64, 53, 78, 0.22);
+}
+
+.hero {
+  background-color: red;
+  width: 100%;
+}
+.hero img {
+  width: 100%;
+}
+
+.page {
+  padding: 0 4em;
+}
+
+.navbar {
+  background-color: #C6B03D;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+.navbar ul li {
+  font-size: 25px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fafafa;
+}
+.navbar ul li:not(:last-child) a::after {
+  content: "｜";
+  margin: 0 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .content {
+    width: 100%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content {
+    width: 992px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .content {
+    width: 1024px;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

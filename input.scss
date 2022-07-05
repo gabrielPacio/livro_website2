@@ -1,0 +1,146 @@
+
+// COLORS BOOK
+$yellow: #DBC043;
+$dark-yellow: #C6B03D;
+$black-yellow: #212111;
+$green: #99902f;
+$blue: #4393db;
+$dark-cyan: #2f6799;
+$pink: #db437d;
+
+// COLORS OTHERS
+$gray-10: #111111;
+$gray-20: #222222;
+$gray-50: #888888;
+$gray-90: #fafafa;
+
+//MIXINS
+
+@mixin inner-shadow {
+  -webkit-box-shadow: inset 3px 0px 27px 0px rgba(64,53,78,0.22);
+  box-shadow: inset 3px 0px 27px 0px rgba(64,53,78,0.22);
+}
+
+// FONTS
+
+@font-face {
+  font-family: merriweather;
+  src: url("./../public/fonts/Merriweather-Regular.ttf");
+}
+
+@font-face {
+  font-family: active;
+  src: url("./../public/fonts/ActiveRegular.OTF");
+}
+
+@font-face {
+  font-family: caveat;
+  src: url("./../public/fonts/CaveatBrush-Regular.ttf");
+}
+
+// GLOBALS
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: $gray-90;
+}
+
+p {
+  font-family: merriweather, Times, serif;
+  color: $black-yellow;
+}
+
+h1 {
+  font-family: active, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: $green;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.content {
+  width: 1024px;
+  background-color: $gray-90;
+  @include inner-shadow;
+}
+
+.hero {
+  background-color: red;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.page {
+  padding: 0 4em;
+}
+
+.navbar {
+  background-color: $dark-yellow;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      font-size: 25px;
+
+      a {
+        text-decoration: none;
+        color: $gray-90;
+      }
+
+      &:not(:last-child){
+        a::after {
+          content: '｜';
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .content {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content {
+    width: 992px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .content {
+    width: 1024px;
+  }
+}
