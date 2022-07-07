@@ -41,6 +41,7 @@ h2 {
   color: #99902f;
   border-bottom: 2px dashed #99902f;
   width: max-content;
+  font-size: 1.3em;
 }
 
 article {
@@ -79,7 +80,7 @@ article {
   flex-direction: row;
 }
 .navbar ul li {
-  font-size: 25px;
+  font-size: 1.5em;
   display: flex;
 }
 .navbar ul li a {
@@ -93,7 +94,7 @@ article {
 .navbar ul li:not(:last-child)::after {
   color: #fafafa;
   content: "｜";
-  margin: 0 10px;
+  margin: 0 0.5em;
 }
 
 .page {
@@ -136,6 +137,15 @@ footer {
   font-size: 10px;
 }
 
+iframe {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 43vw;
+  background-color: #fff;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .content {
@@ -143,6 +153,15 @@ footer {
   }
   .right {
     margin: 0 auto;
+  }
+  .navbar ul li {
+    font-size: 3.5vw;
+  }
+  h2 {
+    font-size: 3.4vw;
+  }
+  img {
+    width: 100%;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
